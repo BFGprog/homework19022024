@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         // Задание 1;
 
+
         // Задание 2;
         // Задание 3;
         // Задание 4;
