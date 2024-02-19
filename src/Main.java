@@ -30,11 +30,11 @@ public class Main {
         //Если возраст человека равен …, то ему нужно ходить … (в зависимости от возраста дописать нужное)
         int age1 = 4;
 
-        if (age1 >= 2 || age1 <= 6) {
+        if (age1 >= 2 && age1 <= 6) {
             System.out.println("Если возраст человека равен " + age1 + ", то ему нужно ходить в детский сад");
-        } else if (age1 >= 7 || age1 <= 17) {
+        } else if (age1 >= 7 && age1 <= 17) {
             System.out.println("Если возраст человека равен " + age1 + ", то ему нужно ходить в школу");
-        } else if (age1 >= 18 || age1 <= 24) {
+        } else if (age1 >= 18 && age1 <= 24) {
             System.out.println("Если возраст человека равен " + age1 + ", то ему нужно ходить в университете");
         } else if (age1 > 24) {
             System.out.println("Если возраст человека равен " + age1 + ", то ему нужно ходить на работу");
@@ -54,7 +54,7 @@ public class Main {
         String conclusion;
         if (age2 <= 5) {
             conclusion = "нельзя кататься на аттракционе";
-        } else if (age2 > 5 || age2 <= 14) {
+        } else if (age2 > 5 && age2 <= 14) {
             conclusion = "можно кататься на аттракционе в сопровождении";
 
         } else if (age2 > 14) {
@@ -76,11 +76,11 @@ public class Main {
         int strandingPlaces = totalPlaces - seatPlaces;
         int seatPlacesOccupied = 5;
         int strandingPlacesOccupied = 13;
-        if (seatPlacesOccupied >= seatPlaces || strandingPlacesOccupied >= strandingPlaces) {
+        if (seatPlacesOccupied >= seatPlaces && strandingPlacesOccupied >= strandingPlaces) {
             System.out.println("Мест нет");
-        } else if (seatPlacesOccupied < seatPlaces || strandingPlacesOccupied >= strandingPlaces) {
+        } else if (seatPlacesOccupied < seatPlaces && strandingPlacesOccupied >= strandingPlaces) {
             System.out.println("Есть сидячие места");
-        } else if (seatPlacesOccupied >= seatPlaces || strandingPlacesOccupied < strandingPlaces) {
+        } else if (seatPlacesOccupied >= seatPlaces && strandingPlacesOccupied < strandingPlaces) {
             System.out.println("Есть стоячие места");
         } else {
             System.out.println("Места есть");
@@ -90,11 +90,11 @@ public class Main {
         int one;
         int two;
         int three;
-        if (one > two || one > three) {
+        if (one > two && one > three) {
             System.out.println(one);
-        } else if (two > one || two > three) {
+        } else if (two > one && two > three) {
             System.out.println(two);
-        } else if (three > one || three > two) {
+        } else if (three > one && three > two) {
             System.out.println(three);
         } else {
             System.out.println("Какие-то числа равны");
