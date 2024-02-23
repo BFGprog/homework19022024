@@ -3,30 +3,30 @@ import javax.swing.*;
 public class Main {
     public static void main(String[] args) {
         // Задание 1;
-        int clientOS;
-        String checOS;
-        if (checOS == "iOS"){
-            clientOS = 0;
-        } else if (checOS == "Android"){
-            clientOS = 1;
+        int clientOS = 0;
+
+        if (clientOS == 0){
+            System.out.println("«Установите версию приложения для iOS по ссылке»");
+        } else if (clientOS == 1){
+            System.out.println("«Установите версию приложения для Android по ссылке»");
         } else {
             System.out.println("Другая ОС");
         }
         // Задание 2;
-        int clientOS2;
-        String checOS2;
-        int yearIssue;
+
+
+        int yearIssue = 2024;
         int clientDeviceYear = 2015;
 
-        if (checOS2 == "iOS"){
-            clientOS2 = 0;
+        if (clientOS == 0){
+
             if (yearIssue < clientDeviceYear) {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
             } else {
                 System.out.println("обычное предложение об установке приложения");
             }
-        } else if (checOS2 == "Android"){
-            clientOS2 = 1;
+        } else if (clientOS == 1){
+
             if (yearIssue < clientDeviceYear){
                 System.out.println("Установите облегченную версию приложения для Android по ссылке");
             } else {
